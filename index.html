@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Jogo da forca</title>
+
+  <link rel='stylesheet' href='./style.css' />
+</head>
+<body>
+
+  <div id='gamescreen'>
+    <img src='./images/hangman0.png' id='homem-forca' />
+
+    <!-- preenchido no script -->
+    <div class='letras-palavra'></div>
+    <div class='letras-testadas'>
+      <b>Letras testadas: </b>
+    </div>
+    <p>
+      <b>Tentativas restantes: </b>
+      <span id='tentativas-restantes-texto'></span>
+    </p>
+
+    <div class='receber-usuario'>
+      <p>Informe uma letra ou a palavra completa</p>
+      <div class='form'>
+        <input type='text' id='input-resposta' autofocus />
+        <button id='btn-verificar'>Verificar</button>
+      </div>
+      <p id='dica'></p>
+    </div>
+  </div>
+
+  <div id='gameover' class='container'>
+    <h3>Fim de jogo!!!</h3>
+
+    <p id='gameover-descricao'></p>
+    <p>Você deseja jogar novamente?</p>
+    <div class='gameover-buttons'>
+      <button id='continue-sim'>Sim</button>
+      <button id='continue-nao'>Não</button>
+    </div>
+  </div>
+
+  <div id='agradecimentos' class='container'>
+    <h3>Muito obrigado!!!</h3>
+  </div>
+
+  <!-- scripts -->
+  <script src='./script.js'></script>
+</body>
+</html>
